@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
@@ -50,9 +51,9 @@
 
   <body class="manrope-font">
     <!-- header section -->
-    <header class="mb-24">
+    <header class="mb-12">
       <!-- navmanu -->
-      <div class="navbar bg-base-100 container mx-auto">
+      <div class="navbar container mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -75,7 +76,12 @@
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li><a>Home</a></li>
+            <div class="flex justify-between items-center">
+              <li class=" text-[#737373]"><a><i class="fa-solid fa-magnifying-glass h-8 w-8 rounded-full bg-white border-2 flex justify-center items-center"></i></a></li>
+              <li class=" text-[#737373]"><a><i class="fa-solid fa-cart-shopping h-8 w-8 rounded-full bg-white border-2 flex justify-center items-center"></i></a></li>
+              
+            </div>  
+            <li><a>Home</a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
@@ -99,12 +105,17 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn bg-[#ABEF5F] rounded-3xl"
+          
+          <ul class="menu menu-horizontal px-1 flex items-center justify-center gap-3">
+            <li class=" text-[#737373] hidden md:block"><a><i class="fa-solid fa-magnifying-glass h-8 w-8 rounded-full bg-white border-2 flex justify-center items-center"></i></a></li>
+            <li class=" text-[#737373] hidden md:block"><a><i class="fa-solid fa-cart-shopping h-8 w-8 rounded-full bg-white border-2 flex justify-center items-center"></i></a></li>
+            <li><a class="btn bg-[#ABEF5F] rounded-3xl"
             ><span class="font-black">Book Consult</span>
             <i
               class="fa-solid fa-arrow-right -rotate-45 rounded-full flex items-center justify-center text-white w-7 h-7 bg-[#1C1C1C]"
             ></i
-          ></a>
+          ></a></li>
+          </ul>
         </div>
       </div>
       <!-- nav bar-->
@@ -137,11 +148,11 @@
     </header>
     <main>
       <!-- WE DESIGN SECTION -->
-      <section class="bg-[#F4F4F4] my-24 md:py-24">
+      <section class="bg-[#F4F4F4] md:pb-24">
         <div class="container mx-auto py-4 ">
           <img src="assets/Vector.png" alt="" />
         </div>
-        <div class="container mx-auto">
+        <div class="container mx-auto pb-6 md:pb-0">
           <!-- mother div -->
           <div class="md:flex justify-between items-center mb-8 md:mb-24">
             <!-- text part -->
@@ -283,8 +294,8 @@
         </div>
       </section>
       <!-- our latest portfolio section -->
-      <section>
-        <div class="container mx-auto">
+      <section class="my-3 md:my-12 md:py-12">
+        <div class="container mx-auto pb-6 md:pb-0">
           <!-- text part -->
           <div class="mx-3 md:mx-0">
             <div class="text-center">
@@ -373,7 +384,7 @@
         </div>
       </section>
       <!-- articles and news section -->
-      <section class="bg-[#F4F4F4] md:my-4 py-4 md:py-24">
+      <section class="bg-[#F4F4F4] py-4 md:py-24">
         <div class="container mx-auto">
           <!-- text part -->
           <div class="text-center">
